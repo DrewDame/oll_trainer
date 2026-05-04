@@ -429,6 +429,7 @@ function makeHtmlDisplayableTime(r)
 function displayStats()
 {
     saveLocal("olltimesarray", JSON.stringify(window.timesArray));
+    renderGraph();
     var len = window.timesArray.length;
 
     var el = document.getElementById("times");

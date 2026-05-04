@@ -32,7 +32,12 @@ OLL trainer
                 </div>
 			</td>
 		</tr>
-        <!-- case description box -->	
+        <tr>
+            <td colspan="2">
+                <canvas id="progressGraph" style="width:100%;max-height:200px;display:none;"></canvas>
+            </td>
+        </tr>
+        <!-- case description box -->
 		<tr>
 			<td colspan="2">
 				<a onclick="adjustSize('timer', 8);">increase</a>/<a onclick="adjustSize('timer', -8);">decrease</a> timer size
@@ -100,8 +105,11 @@ OLL trainer
 <script src="scripts/selection.js?v6"></script>
 <script src="scripts/timer.js?v6"></script>
 <script src="scripts/practice.js?v6"></script>
+<script src="scripts/chart.min.js"></script>
+<script src="scripts/graph.js?v6"></script>
 <script>
 changeMode(0);
+renderGraph();
 </script>
 
 
